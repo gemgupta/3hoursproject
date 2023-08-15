@@ -1,0 +1,20 @@
+.list{
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 0px, 0px, 0px rgb(0, 0, 100);
+    background-color: #0a0c33;
+    display: block;
+    align-items: center;
+}
+.listitem{
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 0px, 0px, 0px rgb(0, 0, 100);
+    background-color: #2a2d5e;
+    margin: 20px;
+    list-style: none;
+    display: block;
+    margin-right: 10px;
+    margin-left: -20px;
+    text-align: center;
+}
