@@ -15,9 +15,9 @@ const ProductForm = ({ addProduct }) => {
   };
 
   return (
-    <div>
+    <div >
       <h2>List Your Products</h2>
-      <form onSubmit={handleSubmit}>
+      <form  onSubmit={handleSubmit}>
         <label>
           Product ID:
           <input
@@ -43,7 +43,13 @@ const ProductForm = ({ addProduct }) => {
           <input
             type="number"
             value={price}
-            onChange={(e) => setPrice(e.target.value)}
+            onChange={(e) => {
+              if (e.target.value > 1) {
+                setPrice(e.target.value);
+              } else {
+                alert("Price cannot be negative");
+              }
+            }}
             required
           />
         </label>
